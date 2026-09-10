@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, Mail } from "lucide-react";
+import { Download, Mail,FileText } from "lucide-react";
 
 export default function Home() {
   const skills = [
@@ -13,6 +13,19 @@ export default function Home() {
     "Lab Protocol & Assays",
   ];
 
+// Engineering Projects Data
+  const projects = [
+{
+  title: "Composite Hydrogel Brain Model for TBI Research",
+  category: "Biomedical Engineering",
+  description:
+    "Engineered PVA composite hydrogels mimicking human brain tissue mechanics under high strain rates for traumatic brain injury modeling.",
+  tags: ["Hydrogels", "TBI Research", "Rheology", "Biomaterials"],
+  link: "/cerebraprint-poster.pdf", // Point directly to the file in public/
+  linkText: "View Poster PDF",
+  icon: FileText,
+}
+  ];
   return (
     <main className="min-h-screen bg-stone-950 text-emerald-50 flex flex-col justify-between selection:bg-emerald-500 selection:text-stone-950 relative overflow-hidden">
       {/* Subtle Forest Background Grid Pattern */}
@@ -86,7 +99,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="www.linkedin.com/in/anna-machart-b35b6b297"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-stone-900 border border-emerald-900/50 text-stone-400 hover:text-emerald-300 hover:border-emerald-700 transition-all active:scale-95"
