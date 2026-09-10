@@ -25,10 +25,21 @@ export default function Home() {
       linkText: "View Poster PDF",
       icon: FileText,
     },
+    {
+    title: "BME 381: RR Interval Screen Recording Analysis",
+    category: "Biomedical Signal Processing",
+    description:
+      "Real-time ECG signal processing and RR interval extraction algorithms for peak detection analysis.",
+    tags: ["Signal Processing", "ECG Analysis", "MATLAB", "Biomedical Devices"],
+    link: "https://youtu.be/jl_uA9uNIuE", // Link to YouTube video page
+    linkText: "Watch on YouTube",
+    youtubeEmbed: "https://www.youtube.com/embed/jl_uA9uNIuE", // ✅ Works correctly inside the iframe
+    icon: FileText,
+  },
   ];
 
   return (
-    <main className="min-h-screen bg-stone-950 text-emerald-50 fmin-h-screen py-12 selection:bg-emerald-500 selection:text-stone-950 relative overflow-hidden">
+    <main className="min-h-screen bg-stone-950 text-emerald-50 py-12 selection:bg-emerald-500 selection:text-stone-950 relative overflow-hidden">
       {/* Subtle Forest Background Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#064e3b15_1px,transparent_1px),linear-gradient(to_bottom,#064e3b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
@@ -162,9 +173,22 @@ export default function Home() {
                         {project.title}
                       </h4>
 
-                      <p className="text-stone-400 text-xs leading-relaxed mb-6">
+                      <p className="text-stone-400 text-xs leading-relaxed mb-4">
                         {project.description}
                       </p>
+
+                      {/* External YouTube Player (Rendered if 'youtubeEmbed' property exists) */}
+{project.youtubeEmbed && (
+  <div className="mb-6 overflow-hidden rounded-lg border border-emerald-900/40 bg-stone-950 aspect-video">
+    <iframe
+      src={project.youtubeEmbed}
+      title={project.title}
+      className="w-full h-full border-0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
+)}
                     </div>
 
                     <div>
