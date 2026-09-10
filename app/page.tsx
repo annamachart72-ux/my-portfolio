@@ -28,7 +28,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-stone-950 text-emerald-50 flex flex-col justify-between selection:bg-emerald-500 selection:text-stone-950 relative overflow-hidden">
+    <main className="min-h-screen bg-stone-950 text-emerald-50 fmin-h-screen py-12 selection:bg-emerald-500 selection:text-stone-950 relative overflow-hidden">
       {/* Subtle Forest Background Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#064e3b15_1px,transparent_1px),linear-gradient(to_bottom,#064e3b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
@@ -129,7 +129,7 @@ export default function Home() {
         <section id="projects" className="pt-8 border-t border-emerald-950">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
