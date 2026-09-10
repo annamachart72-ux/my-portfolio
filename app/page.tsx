@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Download, Mail } from "lucide-react";
 
 export default function Home() {
-  // Domain-specific skills tailored to your dual major
   const skills = [
     "Biomaterials & Tissue Eng.",
     "Process Dynamics & Control",
@@ -15,9 +14,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between selection:bg-cyan-500 selection:text-slate-950 relative overflow-hidden">
-      {/* Background Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+    <main className="min-h-screen bg-stone-950 text-emerald-50 flex flex-col justify-between selection:bg-emerald-500 selection:text-stone-950 relative overflow-hidden">
+      {/* Subtle Forest Background Grid Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#064e3b15_1px,transparent_1px),linear-gradient(to_bottom,#064e3b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
       {/* Hero Section */}
       <div className="relative max-w-5xl mx-auto px-6 pt-24 pb-16 flex-grow flex flex-col justify-center">
@@ -27,24 +26,24 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           {/* Availability Status Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-mono mb-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800/60 text-emerald-400 text-xs font-mono mb-8">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
             Open to Biomedical & Chemical Engineering Opportunities
           </div>
 
           {/* Name & Title */}
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-slate-100 mb-4">
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-stone-100 mb-4">
             Anna Machart
           </h1>
-          <h2 className="text-xl sm:text-2xl font-medium text-cyan-400 mb-6 font-mono">
+          <h2 className="text-xl sm:text-2xl font-medium text-emerald-400 mb-6 font-mono">
             Biomedical & Chemical Engineering Student
           </h2>
 
           {/* Bio / Summary */}
-          <p className="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed mb-8">
+          <p className="text-stone-400 text-base sm:text-lg max-w-2xl leading-relaxed mb-8">
             I am a dual-major Biomedical and Chemical Engineering student with a passion for process optimization, biomaterial innovation, and continuous technical learning.
           </p>
 
@@ -53,7 +52,7 @@ export default function Home() {
             {skills.map((skill, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-slate-900 border border-slate-800 text-slate-300 rounded-md text-xs font-mono hover:border-slate-700 transition-colors"
+                className="px-3 py-1 bg-emerald-950/40 border border-emerald-900/60 text-emerald-200 rounded-md text-xs font-mono hover:border-emerald-700 transition-colors"
               >
                 {skill}
               </span>
@@ -66,7 +65,7 @@ export default function Home() {
             <a
               href="/resume.pdf"
               download="Anna_Machart_Resume.pdf"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition-all duration-200 shadow-lg shadow-cyan-500/20 active:scale-95"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-semibold text-sm transition-all duration-200 shadow-lg shadow-emerald-500/20 active:scale-95"
             >
               <Download className="w-4 h-4" />
               Download Resume
@@ -74,12 +73,11 @@ export default function Home() {
 
             {/* Social / Contact Links */}
             <div className="flex items-center gap-2">
-              {/* GitHub Link */}
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-slate-100 hover:border-slate-700 transition-all active:scale-95"
+                className="p-3 rounded-lg bg-stone-900 border border-emerald-900/50 text-stone-400 hover:text-emerald-300 hover:border-emerald-700 transition-all active:scale-95"
                 aria-label="GitHub Profile"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -87,12 +85,11 @@ export default function Home() {
                 </svg>
               </a>
 
-              {/* LinkedIn Link */}
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-slate-100 hover:border-slate-700 transition-all active:scale-95"
+                className="p-3 rounded-lg bg-stone-900 border border-emerald-900/50 text-stone-400 hover:text-emerald-300 hover:border-emerald-700 transition-all active:scale-95"
                 aria-label="LinkedIn Profile"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -100,10 +97,9 @@ export default function Home() {
                 </svg>
               </a>
 
-              {/* Email Link */}
               <a
                 href="mailto:your.email@example.com"
-                className="p-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-slate-100 hover:border-slate-700 transition-all active:scale-95"
+                className="p-3 rounded-lg bg-stone-900 border border-emerald-900/50 text-stone-400 hover:text-emerald-300 hover:border-emerald-700 transition-all active:scale-95"
                 aria-label="Send Email"
               >
                 <Mail className="w-5 h-5" />
@@ -114,7 +110,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-slate-900 py-6 text-center text-slate-500 text-xs font-mono">
+      <footer className="border-t border-emerald-950 py-6 text-center text-stone-500 text-xs font-mono">
         © {new Date().getFullYear()} Anna Machart. Built with Next.js & Tailwind CSS.
       </footer>
     </main>
