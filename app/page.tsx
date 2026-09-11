@@ -33,9 +33,19 @@ export default function Home() {
     tags: ["Signal Processing", "ECG Analysis", "MATLAB", "Biomedical Devices"],
     link: "https://youtu.be/jl_uA9uNIuE", // Link to YouTube video page
     linkText: "Watch on YouTube",
-    youtubeEmbed: "https://www.youtube.com/embed/jl_uA9uNIuE", // ✅ Works correctly inside the iframe
+    youtubeEmbed: "https://www.youtube.com/embed/jl_uA9uNIuE", //  Works correctly inside the iframe
     icon: FileText,
   },
+      {
+      title: "Microalgae Cultivation Optimization and Analysis",
+      category: "Chemical Engineering",
+      description:
+        "Cultivated two strains of microalgae (Chlorella vulgaris and Desmodesmus abundans) in a controlled environment to observe and ananlyze the consumption of Nitrates and Phosphates over time. Dry Weight was also observed to determine the growth rate of each strain under different ratios of Phosphate and Nitrate",
+      tags: ["Microalgae", "Cultivation", "Analysis", "Chemical Engineering"],
+      link: "/Microalgae-poster.pdf", // Double check for case sensitivity and that the file is in the public/ folder
+      linkText: "View Poster PDF",
+      icon: FileText,
+    },
   ];
 
   return (
