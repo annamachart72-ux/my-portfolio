@@ -112,7 +112,7 @@ export default function Home() {
               {/* Social / Contact Links */}
               <div className="flex items-center gap-2">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/annamachart72-ux"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-lg bg-stone-900 border border-emerald-900/50 text-stone-400 hover:text-emerald-300 hover:border-emerald-700 transition-all active:scale-95"
@@ -136,7 +136,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:annamachart72@gmail.com"
                   className="p-3 rounded-lg bg-stone-900 border border-emerald-900/50 text-stone-400 hover:text-emerald-300 hover:border-emerald-700 transition-all active:scale-95"
                   aria-label="Send Email"
                 >
