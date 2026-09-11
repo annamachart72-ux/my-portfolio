@@ -42,9 +42,10 @@ export default function Home() {
       description:
         "Cultivated two strains of microalgae (Chlorella vulgaris and Desmodesmus abundans) in a controlled environment to observe and ananlyze the consumption of Nitrates and Phosphates over time. Dry Weight was also observed to determine the growth rate of each strain under different ratios of Phosphate and Nitrate",
       tags: ["Microalgae", "Cultivation", "Analysis", "Chemical Engineering"],
-      link: "/Microalgae-poster.pdf", // Double check for case sensitivity and that the file is in the public/ folder
-      linkText: "View Poster PDF",
-      icon: FileText,
+      links: [
+        {href: "/Microalgae-poster.pdf", linkText: "View Poster PDF", icon: FileText},
+        {href: "/Microalgae Research Paper.pdf", linkText: "View Research Paper PDF", icon: FileText}
+      ]
     },
   ];
 
